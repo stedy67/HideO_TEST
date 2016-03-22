@@ -14,8 +14,42 @@
   font-style: normal;
   font-weight: bold;
   src: url("fonts/ProximaNova-Bold.eot?") format("eot"), url("fonts/ProximaNova-Bold.woff2") format("woff2"), url("fonts/ProximaNova-Bold.woff") format("woff"), url("fonts/ProximaNova-Bold.ttf") format("truetype"), url("fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); }
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
 body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: ProximaNovaT-Thin;
-  color: #443c40; }
+  color: #443c40;
+  background-color: #d9d9d9; }
+
+section {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+.container-fluid {
+  background-color: #d9d9d9; }
+
+.row {
+  height: auto;
+  display: inline-block; }
+
+.col-lg-4, .col-md-4, .col-sm-4, .col-xs-12 {
+  background-color: #d9d9d9;
+  height: auto;
+  display: inline-block; }
+
+figcaption {
+  margin: 20px 10px; }
+
+figure {
+  background-color: white; }
 
 /*# sourceMappingURL=construct.css.map */
