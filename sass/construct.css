@@ -1,0 +1,21 @@
+/* Scss Document */
+@font-face {
+  font-family: "ProximaNovaT-Thin";
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/ProximaNovaT-Thin.eot?") format("eot"), url("fonts/ProximaNovaT-Thin.woff2") format("woff2"), url("fonts/ProximaNovaT-Thin.woff") format("woff"), url("fonts/ProximaNovaT-Thin.ttf") format("truetype"), url("fonts/ProximaNovaT-Thin.svg#ProximaNovaT-Thin") format("svg"); }
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/ProximaNova-Regular.eot?") format("eot"), url("fonts/ProximaNova-Regular.woff2") format("woff2"), url("fonts/ProximaNova-Regular.woff") format("woff"), url("fonts/ProximaNova-Regular.ttf") format("truetype"), url("fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg"); }
+@font-face {
+  font-family: "ProximaNova-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/ProximaNova-Bold.eot?") format("eot"), url("fonts/ProximaNova-Bold.woff2") format("woff2"), url("fonts/ProximaNova-Bold.woff") format("woff"), url("fonts/ProximaNova-Bold.ttf") format("truetype"), url("fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); }
+body {
+  font-family: ProximaNovaT-Thin;
+  color: #443c40; }
+
+/*# sourceMappingURL=construct.css.map */
