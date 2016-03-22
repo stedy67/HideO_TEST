@@ -44,6 +44,13 @@
 	}
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 @include font-face (ProximaNovaT-Thin, fonts/ProximaNovaT-Thin, 100, normal);
 @include font-face (ProximaNova-Regular, fonts/ProximaNova-Regular, normal, normal);
 @include font-face (ProximaNova-Bold, fonts/ProximaNova-Bold, bold, normal);
@@ -102,4 +109,55 @@ figcaption  {
 
 figure  {
 	background-color:$secBg-color;
+}
+
+form  {
+	width:0px;
+	position:absolute;
+	left:200px;
+	top:50px;
+}
+
+input[type='text']	{
+	display:none;
+	margin:5px auto 0 auto;
+	width: 0px;
+	height: 36px;
+	color: $base-color;
+	font-size: 18px;
+	font-family:$font-normal;
+	background-image:url(../img/searchBG.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+#livesearch {
+    position: relative;
+    top: 20px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 350px;
+    color: $secBg-color;
+    font-size: 18px;
+    text-align: left;
+	font-family:$font-normal;
+}
+
+form	{
+	height:52px;
+	margin-top:-4px;
+	border-top:1px $base-color solid;
+	border-bottom:1px $base-color solid;
+}
+
+#searchTrig  {
+	diplay:block;
+	height:21px;
+	width:35px;
+	background-image:url(../img/searchBG.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	left:200px;
+	top:50px;
 }

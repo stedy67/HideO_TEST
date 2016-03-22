@@ -52,4 +52,50 @@ figcaption {
 figure {
   background-color: white; }
 
+form {
+  width: 0px;
+  position: absolute;
+  left: 200px;
+  top: 50px; }
+
+input[type='text'] {
+  display: none;
+  margin: 5px auto 0 auto;
+  width: 0px;
+  height: 36px;
+  color: #443c40;
+  font-size: 18px;
+  font-family: ProximaNova-Regular;
+  background-image: url(../img/searchBG.png);
+  background-repeat: no-repeat;
+  background-position: right; }
+
+#livesearch {
+  position: relative;
+  top: 20px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 350px;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  font-family: ProximaNova-Regular; }
+
+form {
+  height: 52px;
+  margin-top: -4px;
+  border-top: 1px #443c40 solid;
+  border-bottom: 1px #443c40 solid; }
+
+#searchTrig {
+  diplay: block;
+  height: 21px;
+  width: 35px;
+  background-image: url(../img/searchBG.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 200px;
+  top: 50px; }
+
 /*# sourceMappingURL=construct.css.map */
