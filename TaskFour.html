@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Hideout test 3</title>
+    <title>The Hideout test 4</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="sass/construct.css" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]>
@@ -13,7 +13,7 @@
 		<![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -25,8 +25,9 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="TaskOne.html">Task One</a></li>
               <li><a href="TaskTwo.html">Task Two</a></li>
-              <li><a href="#" class="active">Task Three</a></li>
-              <li><a href="TaskFour.html">All together HTML</a></li>
+              <li><a href="#three">Task Three</a></li>
+              <li><a href="#" class="active">All together HTML</a></li>
+              <li><a href="#two">Tasks One&amp;Two</a></li>
               <li class="divider"></li>
               <li><a href="http://www.steveswebdesigns.co.uk" target="_blank">Steve's web designs</a></li>
             </ul>
@@ -37,7 +38,7 @@
     </div>
     <!-- /.container-fluid -->
   </nav> 
-  <section class="container-fluid text-center">
+  <section class="container-fluid text-center" id="three">
       <img src="img/photo1.jpg" id="imgGAL1" alt="Gallery image 1" class="img-responsive"/>
       <img src="img/photo2.jpg" id="imgGAL2" alt="Gallery image 2" class="img-responsive"/>
       <img src="img/photo3.jpg" id="imgGAL3" alt="Gallery image 3" class="img-responsive"/>
@@ -45,7 +46,7 @@
       <img src="img/photo5.jpg" id="imgGAL5" alt="Gallery image 5" class="img-responsive"/>
       <img src="img/photo6.jpg" id="imgGAL6" alt="Gallery image 6" class="img-responsive"/>
   
-      <h1 id="olyHDG" class="text-center">Task no.3 &middot; Basic Image Gallery</h1>
+      <h1 id="olyHDG" class="text-center">Task no.4 &middot; All together<br/>Task no.3 &middot; Basic Image Gallery</h1>
       <aside class="col-lg-7 col-md-7 col-sm-7 col-xs-7" style="width:60%; height:100%; padding-right:0;">
           <div class="row" id="galROW1" style="width:100%; height:64%; margin-bottom:10px;">
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="galIMG1" style="width:64%; height:100%; margin-right:1%; background-image:url(img/photo1.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
@@ -61,9 +62,57 @@
           <div class="row" id="galROW2a" style="width:100%; height:65%; margin-top:1%; background-image:url(img/photo6.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
       </div>
   </section>
+  <!--TASK 2-->
+  <section class="container-fluid" style="height:200px;" id="two">
+  	<h1 class="text-center">Task no.2 &middot; Expandable Search</h1>
+      <div class="row wrap">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+              <div id="searchTrig"></div>
+              <form id="searchForm">
+              <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="  Enter a search term" class="form-control glyphicon glyphicon-search">
+              <div id="livesearch"></div>
+              </form>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+      </div>
+  </section>
+  <!--TASK 1-->
+  <section class="container text-center" id="one">
+    <h1>Task no.1 &middot; Simple Cards</h1>
+      <div class="row text-center wrap">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <figure class="eq">
+              <img src="img/T1photo1.jpg" class="img-responsive" alt="Test 1 image 1"/>
+              <figcaption class="text-justify">
+              Lorem ipsum dolor sit amet, id error congue eum, no nulla solet mei. In democritum constituto suscipiantur sit, tale aliquip tamquam vis at. His te dicat interpretaris, nam an melius animal. Ei integre dolorum vel, audiam praesent incorrupte cum ut.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <figure class="eq">
+              <img src="img/T1photo2.jpg" class="img-responsive" alt="Test 1 image 2"/>
+              <figcaption class="text-justify">
+              Lorem ipsum dolor sit amet, id error congue eum, no nulla solet mei. In democritum constituto suscipiantur sit, tale aliquip tamquam vis at. His te dicat interpretaris, nam an melius animal. Ei integre dolorum vel, audiam praesent incorrupte cum ut.<br/>Cu graecis commune mei, expetendis adipiscing te ius. Id veri alienum percipit sit, dicit iracundia at vis. Ex ius volumus accusamus, ne nam delenit nonumes explicari. Eos dicat dignissim philosophia at. Nemore disputando theophrastus ex vis. Nec ad tempor hendrerit.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 eq">
+            <figure class="eq">
+              <img src="img/T1photo3.jpg" class="img-responsive" alt="Test 1 image 3"/>
+              <figcaption class="text-justify">
+              Enim docendi eam te, ponderum recusabo eu sed, reque vocent duo ei. Cu pri justo vocibus vulputate, exerci lucilius intellegat ex quo. Et quodsi definitionem vim, has nibh deserunt no, alia meis iisque mel in. Zril percipit cu pro, eos ut homero ridens aliquam. Sint sensibus qui ne, per eu prima placerat. Modus mediocritatem in eos, mollis ocurreret urbanitas sea at.
+              </figcaption>
+            </figure>
+         </div>
+      </div>
+  </section>
+  <div id="topLINK"><a href="#top">^<br/>BACK<br/>TO TOP</a></div>
   
   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="js/gallery.js"></script>
+  <script type="text/javascript" src="js/equal.js"></script>
+  <script type="text/javascript" src="js/ajax_search.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>

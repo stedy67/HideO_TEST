@@ -81,7 +81,8 @@ input[type='text'] {
   color: white;
   font-size: 18px;
   text-align: left;
-  font-family: ProximaNova-Regular; }
+  font-family: ProximaNova-Regular;
+  z-index: 50; }
 
 form {
   height: 52px;
@@ -131,5 +132,31 @@ span.caret.active {
   top: 0;
   left: 0;
   z-index: 100; }
+
+#topLINK {
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  font-size: 20px;
+  height: 95px;
+  width: 95px;
+  display: block;
+  background-color: rgba(68, 60, 64, 0.6);
+  border: 1px 1px 0 1px solid #443c40;
+  font-family: ProximaNova-Bold;
+  font-size: 20px;
+  text-align: center; }
+
+#topLINK a:link {
+  text-decoration: none;
+  color: white; }
+
+#topLINK a:hover {
+  text-decoration: none;
+  color: #9b9b9b; }
+
+#topLINK a:visited {
+  text-decoration: none;
+  color: white; }
 
 /*# sourceMappingURL=construct.css.map */

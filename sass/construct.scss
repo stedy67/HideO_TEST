@@ -59,11 +59,12 @@
  $font-normal: ProximaNova-Regular;
  $font-heavy: ProximaNova-Bold;
  $font-light: ProximaNovaT-Thin;
- $bg-color: rgb(217,217,217);
+ $bg-color: rgb(217,217,217);      
  $secBg-color: rgb(255,255,255);
  $tirBg-color: rgb(155,155,155);
  $actiBG-color: rgb(246,42,38);
  $base-color: rgb(68,60,64);
+ $alpha-color: rgba(68,60,64,0.6);
  $secondry-color: rgb(170,176,185);
  
  html	{
@@ -144,6 +145,7 @@ input[type='text']	{
     font-size: 18px;
     text-align: left;
 	font-family:$font-normal;
+	z-index:50;
 }
 
 form	{
@@ -202,6 +204,39 @@ span.caret.active	{
 	left:0;
 	z-index:100;
 }
+
+#topLINK	{
+	position:fixed;
+	bottom:0;
+	right:10%;
+	font-size:20px;
+	height:95px;
+	width:95px;
+	display:block;
+	background-color:$alpha-color;
+	border:1px 1px 0 1px solid $base-color;
+	font-family:$font-heavy;
+	font-size: 20px;
+	text-align:center;
+}
+
+#topLINK a:link  {
+	text-decoration:none;
+	color:$secBg-color;
+}
+
+#topLINK a:hover  {
+	text-decoration:none;
+	color:$tirBg-color;
+}
+
+#topLINK a:visited  {
+	text-decoration:none;
+	color:$secBg-color;
+}
+
+
+ 
 
 	
 	
