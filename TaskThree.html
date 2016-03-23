@@ -5,22 +5,65 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Hideout test 3</title>
-    <!-- Bootstrap -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="sass/construct.css" rel="stylesheet" type="text/css">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
   </head>
   <body>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-1.11.3.min.js"></script>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="js/bootstrap.js"></script>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand" href="http://www.venturi-group.com" target="_blank">Venturi</a></div>
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret active"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="TaskOne.html">Task One</a></li>
+              <li><a href="TaskTwo.html">Task Two</a></li>
+              <li><a href="TaskThree.html" class="active">Task Three</a></li>
+              <li class="divider"></li>
+              <li><a href="TaskFour.html">All together HTML</a></li>
+              <li><a href="http://www.steveswebdesigns.co.uk" target="_blank">Steve's web designs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid -->
+  </nav> 
+  <section class="container-fluid text-center">
+      <img src="img/photo1.jpg" id="imgGAL1" alt="Gallery image 1" class="img-responsive"/>
+      <img src="img/photo2.jpg" id="imgGAL2" alt="Gallery image 2" class="img-responsive"/>
+      <img src="img/photo3.jpg" id="imgGAL3" alt="Gallery image 3" class="img-responsive"/>
+      <img src="img/photo4.jpg" id="imgGAL4" alt="Gallery image 4" class="img-responsive"/>
+      <img src="img/photo5.jpg" id="imgGAL5" alt="Gallery image 5" class="img-responsive"/>
+      <img src="img/photo6.jpg" id="imgGAL6" alt="Gallery image 6" class="img-responsive"/>
+  
+      <h1 id="olyHDG" class="text-center">Task no.3 &middot; Basic Image Gallery</h1>
+      <aside class="col-lg-7 col-md-7 col-sm-7 col-xs-7" style="width:60%; height:100%; padding-right:0;">
+          <div class="row" id="galROW1" style="width:100%; height:64%; margin-bottom:10px;">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="galIMG1" style="width:64%; height:100%; margin-right:1%; background-image:url(img/photo1.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="galIMG2" style="width:34%; height:100%; margin-left:1%; background-image:url(img/photo2.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
+          </div>
+          <div class="row" id="galROW2" style="width:100%; height:35%;">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="galIMG3" style="width:34%; height:100%; margin-right:1%; background-image:url(img/photo3.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="galIMG4" style="width:64%; height:100%; margin-left:1%; background-image:url(img/photo4.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
+          </div>
+      </aside>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="width:40%; height:100%;">
+          <div class="row" id="galROW1a" style="width:100%; height:34%;  margin-bottom:1%; background-image:url(img/photo5.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
+          <div class="row" id="galROW2a" style="width:100%; height:65%; margin-top:1%; background-image:url(img/photo6.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;"></div>
+      </div>
+  </section>
+  
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>
